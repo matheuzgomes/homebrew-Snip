@@ -2,7 +2,7 @@
 cask "snip-notes" do
   desc "A fast and lightweight note-taking CLI application"
   homepage "https://github.com/matheuzgomes/Snip"
-  version "0.2.1"
+  version "0.2.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,12 +12,18 @@ cask "snip-notes" do
 
   on_macos do
     on_intel do
-      url "https://github.com/matheuzgomes/Snip/releases/download/v0.2.1/snip_Darwin_x86_64.tar.gz"
-      sha256 "8b556441e653a4a4bd081e5ced758bf43547fae7667e095e90d2f0bb442b6419"
+      url "https://github.com/matheuzgomes/Snip/releases/download/v0.2.2/snip_Darwin_x86_64.tar.gz"
+      sha256 "6d1ab5895c125d4534d5f8d91e33c108d370df941cd8d0e3162755aa9cf5abeb"
     end
     on_arm do
-      url "https://github.com/matheuzgomes/Snip/releases/download/v0.2.1/snip_Darwin_arm64.tar.gz"
-      sha256 "94d0968c80e1293c9956535e0dd8c09bb35acdf0fba7b4445404fad7f3d2f281"
+      url "https://github.com/matheuzgomes/Snip/releases/download/v0.2.2/snip_Darwin_arm64.tar.gz"
+      sha256 "314f65d2186b0e6c1d7c1508bfc7b1f73a81fe6272b94390299f690270748c40"
+    end
+  end
+
+  postflight do
+    if OS.mac?
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/snip"]
     end
   end
 
