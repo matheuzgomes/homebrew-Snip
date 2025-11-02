@@ -2,7 +2,7 @@
 cask "snip-notes" do
   desc "A fast and lightweight note-taking CLI application"
   homepage "https://github.com/matheuzgomes/Snip"
-  version "1.0.0"
+  version "1.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,12 +12,12 @@ cask "snip-notes" do
 
   on_macos do
     on_intel do
-      url "https://github.com/matheuzgomes/Snip/releases/download/v1.0.0/snip_Darwin_x86_64.tar.gz"
-      sha256 "9ad913d49cc99dc4abb799761375db1ea6290c3725449908993680bac2e587c1"
+      url "https://github.com/matheuzgomes/Snip/releases/download/v1.1.0/snip_Darwin_x86_64.tar.gz"
+      sha256 "c2bb1c7dc2939f92d4b18fc19bc63fb0d4fe6aef17cd1623e3f73f1f59497f8b"
     end
     on_arm do
-      url "https://github.com/matheuzgomes/Snip/releases/download/v1.0.0/snip_Darwin_arm64.tar.gz"
-      sha256 "5beaa7bd93f0445558a7b8f3d3a7ce191170f45dd23d46c571d3cf365a89607c"
+      url "https://github.com/matheuzgomes/Snip/releases/download/v1.1.0/snip_Darwin_arm64.tar.gz"
+      sha256 "f3d6a3493262ae96be5c1430a2184ba15e228abb20d84b3425e2329e24292ef0"
     end
   end
 
