@@ -13,11 +13,11 @@ cask "snip-notes" do
   on_macos do
     on_intel do
       url "https://github.com/matheuzgomes/Snip/releases/download/v1.1.1/snip_Darwin_x86_64.tar.gz"
-      sha256 "5a0b65ab75480046d37e0dca6c16e5b825a3db4dc31b729a217736de4a8617eb"
+      sha256 "3f750a72618e284eda0129c2993b67c8b16457ffabb5dd576d6f4f8205666689"
     end
     on_arm do
       url "https://github.com/matheuzgomes/Snip/releases/download/v1.1.1/snip_Darwin_arm64.tar.gz"
-      sha256 "fcd86ea192cf895e962ed7d9f11337a9a4f8d00121dab7ffaa75b329e822f10b"
+      sha256 "38a97acf8a606291e0cf63bf1564a7ed4948d7850f2354ba9c07b15cd21f49a7"
     end
   end
 
